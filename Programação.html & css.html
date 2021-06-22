@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.1.5/dist/style.min.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.6.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.2.3"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.1.5/dist/index.umd.min.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, data) => {
+        const {
+          Markmap
+        } = getMarkmap();
+        window.mm = Markmap.create('svg#mindmap', getOptions == null ? void 0 : getOptions(), data);
+      })(() => window.markmap,null,{"t":"heading","d":1,"p":{"lines":[0,1]},"v":"Programação","c":[{"t":"heading","d":2,"p":{"lines":[2,3]},"v":"HTML","c":[{"t":"heading","d":3,"p":{"lines":[4,5]},"v":"&lt;.h.1&gt;&lt;/.h1.&gt;(h1,h2,h3,h4,h5,h6.)"},{"t":"heading","d":3,"p":{"lines":[6,7]},"v":"(h1)Fomatos de letras, do maior para o menor"},{"t":"heading","d":3,"p":{"lines":[8,9]},"v":"Tags &lt;.html.&gt; &lt;./html.&gt;"}]},{"t":"heading","d":2,"p":{"lines":[10,11]},"v":"CSS","c":[{"t":"heading","d":3,"p":{"lines":[12,13]},"v":"tamanhos formas é cores {width:45%;}"}]},{"t":"heading","d":2,"p":{"lines":[14,15]},"v":"Layout","c":[{"t":"heading","d":3,"p":{"lines":[16,17]},"v":"Fotos com Estilos"}]},{"t":"heading","d":2,"p":{"lines":[18,19]},"v":"Algum texto CSS","c":[{"t":"heading","d":3,"p":{"lines":[20,21]},"v":"BOX-SHADOWN"}]},{"t":"heading","d":2,"p":{"lines":[22,23]},"v":"some CSS","c":[{"t":"heading","d":3,"p":{"lines":[24,25]},"v":"FONT-SIZE"},{"t":"heading","d":3,"p":{"lines":[26,27]},"v":"text-align"},{"t":"heading","d":3,"p":{"lines":[28,29]},"v":"background-color"},{"t":"heading","d":3,"p":{"lines":[30,31]},"v":"background"},{"t":"heading","d":3,"p":{"lines":[32,33]},"v":"padding"},{"t":"heading","d":3,"p":{"lines":[34,35]},"v":"border"},{"t":"heading","d":3,"p":{"lines":[36,37]},"v":"border-radius"},{"t":"heading","d":3,"p":{"lines":[38,39]},"v":"border-shadow"},{"t":"heading","d":3,"p":{"lines":[40,41]},"v":"Cores na sua página"},{"t":"heading","d":3,"p":{"lines":[42,43]},"v":"Objetos  para divulgação"},{"t":"heading","d":3,"p":{"lines":[44,45]},"v":"Criação de site"}]}]})</script>
+</body>
+</html>
